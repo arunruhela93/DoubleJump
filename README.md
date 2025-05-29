@@ -3,6 +3,7 @@
 ![JDK](https://img.shields.io/badge/JDK-1.17-blue.svg)
 ![Supported versions](https://img.shields.io/badge/Minecraft-1.17--1.21.5-green.svg)
 [![SpigotMC](https://img.shields.io/badge/Buy_on_SpigotMC-yellow.svg)](https://www.spigotmc.org/resources/%E2%9C%A8-doublejump.125526/)
+[![Polymart](https://img.shields.io/badge/Buy_on_Polymart-green.svg)](https://polymart.org/product/7887/doublejump-1-17-1-21-5)
 [![bStats](https://img.shields.io/badge/Servers_using_doublejump-00695c)](https://bstats.org/plugin/bukkit/Double-Jump/19387)
 
 > **Fully customizable, lag-free double jumping — the way it *should* be.**  
